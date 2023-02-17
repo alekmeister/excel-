@@ -1,11 +1,24 @@
 {
   "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@core/*": ["./src/core/*"]
+    },
     "outDir": "./dist/",
     "sourceMap": true,
+    "strictPropertyInitialization": false,
     "noImplicitAny": true,
     "module": "commonjs",
     "target": "es5",
     "allowJs": true,
-    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node"
   }
 }
+
