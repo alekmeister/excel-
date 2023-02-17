@@ -1,10 +1,8 @@
 import './scss/index.scss'
+import {Excel} from '@/components/excel/Excel';
 
+const excel = new Excel('#app', {
+  components: []
+})
 
-async function test(arg: string) {
-  return await Promise.resolve('async working')
-}
-
-test('qwe').then((el) => console.log(el))
-
-console.log('init')
+console.log(excel, 'excel')
